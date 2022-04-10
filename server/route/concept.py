@@ -6,6 +6,12 @@ from app import db
 
 concept = Blueprint('concept', __name__)
 
+# Concept 테이블 조회 /concept
+# In :
+#   keyword (str) - concept_name 검색 (Optional)
+#   limit (int) - 조회 수 (Optional, default = 100)
+#   page (int) - 페이지 (Optional, default = 1)
+# Out: {"search": "Concept 테이블 조회 결과"}
 @concept.route('/', methods = ['GET'])
 def concepts():
     q = Query(db)
