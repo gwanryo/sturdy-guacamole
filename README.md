@@ -19,7 +19,19 @@ This project is based on Python Flask.
     git clone https://github.com/gwanryo/sturdy-guacamole
     ```
 
-2. Build image, and run
+2. Write .env based on .env.sample, all values are essential
+
+    ```bash
+    DB_HOST=
+    DB_PORT=
+    DB_NAME=
+    DB_USER=
+    DB_PASS=
+    DB_CONN_MIN=
+    DB_CONN_MAX=
+    ```
+
+3. Build image, and run
 
     ```bash
     cd sturdy-guacamole
